@@ -2,15 +2,17 @@ Rails.application.routes.draw do
 
   root "meters#index"
 
-  get 'history/new'
+  # get 'history/new'
 
-  get 'history/show'
+  # get 'history/show'
 
-  get 'history/edit'
+  # get 'history/edit'
 
-  get 'history/update'
+  # get 'history/update'
 
-  resources :meters
+  resources :meters do
+    resource :history, only: [:new, :show, :edit, :update]
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

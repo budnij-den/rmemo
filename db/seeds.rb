@@ -9,3 +9,5 @@ Meter.create(value_total:  0, feature: :gas, placed_at: :kitch )
 Meter.create(value_total:  0, feature: :hwater, placed_at: :bath )
 Meter.create(value_total:  0, feature: :cwater, placed_at: :bath )
 Meter.create(value_total:  0, feature: :electr, placed_at: :hall )
+
+Meter.all.each{|meter| History.create(meter_id: meter.id)}

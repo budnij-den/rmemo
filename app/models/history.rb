@@ -1,3 +1,3 @@
 class History < ApplicationRecord
-  belongs_to :meter
+  belongs_to :meter, dependent: :destroy
 end

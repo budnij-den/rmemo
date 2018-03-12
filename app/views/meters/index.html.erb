@@ -12,14 +12,14 @@
   <tbody>
     <% @meters.each do |meter| %>
       <tr class="text-center">
-        <td class="badge"><%=  "##{meter.id}" %></td>
+        <td><%= link_to "##{meter.id}", meter, class: 'badge btn-info' %></td>
         <td ><%= meter.value_total %></td>
         <td ><%= "#{meter.feature} at #{meter.placed_at}" %></td>
       </tr>
       <tr class="text-center" style="border-bottom: 1em solid linen;">
-        <td><small><%= link_to 'Show', meter, class: 'btn btn-sm btn-default' %></small></td>
-        <td><small><%= link_to 'Edit', edit_meter_path(meter), class: 'btn btn-sm btn-default'  %></small></td>
-        <td><small><%= link_to 'Destroy', meter, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-default'  %></small></td>
+        <td><small><%= link_to 'Show', meter, class: 'btn btn-sm btn-info' %></small></td>
+        <td><small><%= link_to 'Edit', edit_meter_path(meter), class: 'btn btn-sm btn-warning'  %></small></td>
+        <td><small><%= link_to 'Destroy', meter, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-danger'  %></small></td>
       </tr>
     <% end %>
   </tbody>
