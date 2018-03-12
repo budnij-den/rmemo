@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  malue_total: 1.5
+  featuer: MyString
+  placed_at: MyString
+
+two:
+  malue_total: 1.5
+  featuer: MyString
+  placed_at: MyString

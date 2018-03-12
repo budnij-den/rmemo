@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<table class="table-striped">
+  <tr>
+    <td>#</td>
+    <td><%= "#{@meter.id}" %></td>
+  </tr>
+  <tr>
+    <td>value</td>
+    <td><%= @meter.value_total %></td>
+  </tr>
+  <tr>
+    <td>feature</td>
+    <td><%= @meter.feature %></td>
+  </tr>
+  <tr>
+    <td>placed at</td>
+    <td><%= @meter.placed_at %></td>
+  </tr>
+
+</table>
+
+<%= link_to 'Edit', edit_meter_path(@meter), class: 'btn btn-default'  %>
+<%= link_to 'Back', meters_path, class: 'btn btn-default'  %>

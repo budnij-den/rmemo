@@ -1,0 +1,18 @@
+.bodyclass{
+  width:44em;
+  margin: 0 auto;
+  text-align:center;
+  border-left: 2em solid bisque;
+  border-right: 2em solid bisque;
+  border-radius: 2em;
+}
+table{
+  width:40em;
+}
+/*td .btn{
+  margin: .5em;
+}*/
+
+.btn{
+  margin: .5em;
+}
