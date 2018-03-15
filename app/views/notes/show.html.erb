@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Once value:</strong>
+  <%= @note.once_value %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @note.comment %>
+</p>
+
+<p>
+  <strong>Meter:</strong>
+  <%= @note.meter %>
+</p>
+
+<%= link_to 'Edit', edit_note_path(@note) %> |
+<%= link_to 'Back', notes_path %>

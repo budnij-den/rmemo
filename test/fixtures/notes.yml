@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  once_value: 1.5
+  comment: MyString
+  meter: one
+
+two:
+  once_value: 1.5
+  comment: MyString
+  meter: two
