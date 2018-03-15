@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180315172232) do
+ActiveRecord::Schema.define(version: 20180315191129) do
 
   create_table "histories", force: :cascade do |t|
     t.float "value_once"
@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 20180315172232) do
     t.integer "meter_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "history_id"
+    t.index ["history_id"], name: "index_notes_on_history_id"
     t.index ["meter_id"], name: "index_notes_on_meter_id"
   end
 

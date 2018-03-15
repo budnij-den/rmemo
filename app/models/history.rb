@@ -1,4 +1,4 @@
 class History < ApplicationRecord
   belongs_to :meter, dependent: :destroy
-  belongs_to :notes
+  has_many :notes
 end
