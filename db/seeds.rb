@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Meter.create(value_total:  0, feature: :gas, placed_at: :kitch )
-Meter.create(value_total:  0, feature: :hwater, placed_at: :bath )
-Meter.create(value_total:  0, feature: :cwater, placed_at: :bath )
-Meter.create(value_total:  0, feature: :electr, placed_at: :hall )
+Meter.create(value_total:  1, feature: :gas, placed_at: :kitch )
+Meter.create(value_total:  2, feature: :hwater, placed_at: :bath )
+Meter.create(value_total:  3, feature: :cwater, placed_at: :bath )
+Meter.create(value_total:  4, feature: :electr, placed_at: :hall )
 
 Meter.all.each{|meter| History.create(meter_id: meter.id)}
