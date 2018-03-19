@@ -17,8 +17,9 @@
     <td>placed at</td>
     <td><%= @meter.placed_at %></td>
   </tr>
-
 </table>
+
+<%= link_to 'Make note', notes_path(@note), class: 'btn btn-warning'  %>
 
 <%= link_to 'Edit', edit_meter_path(@meter), class: 'btn btn-default'  %>
 <%= link_to 'Back', meters_path, class: 'btn btn-default'  %>

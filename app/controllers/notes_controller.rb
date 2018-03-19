@@ -1,5 +1,6 @@
 class NotesController < ApplicationController
   before_action :set_note, only: [:show, :edit, :update, :destroy]
+  before_action :set_meter, only: [:show, :edit, :update, :destroy]
 
   # GET /notes
   # GET /notes.json
@@ -65,6 +66,10 @@ class NotesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_note
       @note = Note.find(params[:id])
+    end
+
+    def set_meter
+      @meter = Meter.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
